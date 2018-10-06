@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<div id="header" xmlns="http://www.w3.org/1999/html">
+    <p> Hash Value Lookup</p>
+    <hr/>
+</div>
+
+<html>
+<style>
+    html{
+        font-family:"Garmond";
+        background:white;
+    }
+    body{
+        background: lightgrey;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #header{
+        padding-top: 5;;
+        background: lightsteelblue;
+    }
+    #inner-header{
+        padding-left: 10;
+    }
+    #main{
+        padding-left: 10;
+    }
+    input[type="text"], select {
+        color: grey;
+        border: 1px solid lightsteelblue;
+        height: 30px;
+        line-height:15px;
+        margin: 2px 6px 16px 0px;
+    }
+    input[type="submit"] {
+        padding: 5px 10px 5px 10px;
+        color: black;
+        background: lightsteelblue;
+        border: none;
+        box-shadow: 1px 1px 1px #4C6E91;
+    }
+    input[type="submit"]:hover{
+        background: steelblue;
+    }
+</style>
+
+<script>
+  var resultVT = {{ resultVT|tojson }};
+
+</script>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hash Value Lookup</title>
+
+</head>
+<form>
+    <!--<input type="text" name ="hash" placeholder ="Enter hash value "/>-->
+    <textarea name="textArea" rows="10" cols="100" placeholder="Enter file hash MD5, SHA-1 or SHA-256"></textarea>
+    <input type ="submit" value="Submit" />
+</form>
+
+<form  method="POST"
+      enctype = "multipart/form-data">
+    <input type ='file' name = 'inputFile'/>
+    <input type ='submit'/>
+</form>
+
+<body>
+
+    <div id=header">
+        <div id ="inner-header">
+            <table>
+                <th>File Hash</th>
+                        <th>Positives</th>
+                        <th>Symantec</th>
+                        <th>Symantec Result</th>
+                        <th>Symantec Update</th>
+                        <th>TrendMicro</th>
+                        <th>Sophos</th>
+                        <th>McAfee</th>
+                {% for row in resultVT %}
+                    <tr>
+                        <!--{% for c in row %}-->
+                            <!--<td>{{c}}</td>-->
+                        <!--{% endfor %}-->
+                        <td><a href="{{row[9]}}" target="_blank">{{row[0]}}</a></td>
+                        <td>{{row[1]}}/{{row[2]}}</td>
+                        <p><td>{{row[3]}}</td></p>
+                        <td>{{row[4]}}</td>
+                        <td>{{row[5]}}</td>
+                        <td>{{row[6]}}</td>
+                        <td>{{row[7]}}</td>
+                        <td>{{row[8]}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+</body>
+</html>
