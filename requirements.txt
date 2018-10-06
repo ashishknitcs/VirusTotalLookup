@@ -80,7 +80,6 @@ PySocks==1.6.8
 pytest==3.3.1
 python-dateutil==2.6.1
 pytz==2017.2
-pywin32==223
 PyYAML==3.12
 pyzmq==16.0.3
 qtconsole==4.3.1
