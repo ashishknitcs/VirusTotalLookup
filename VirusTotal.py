@@ -124,4 +124,4 @@ def findHashatVT(hashValue):
     return hashValue,positives,total,Symantec_response, Symantec_result,Symantec_update, Trendmicro_response, Sophos_response,McAfee_response,permalink
 
 if __name__ == '__main__':
-    app.run(port=5001,debug=True)
+    app.run(port=5001,debug=False)
