@@ -17,8 +17,8 @@ headers = {
   "User-Agent" : "gzip,  My Python requests library example client or username"}
 
 proxy_list = {
-    'http': 'http://ashishkushwaha:Auug2017@10.72.15.60:80',
-    'https': 'http://ashishkushwaha:Auug2017@10.72.15.60:80'
+    'http': 'http://username:password@proxyserver:proxyport',
+    'https': 'https://username:password@proxyserver:proxyport'
 }
 
 
