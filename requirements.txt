@@ -75,7 +75,6 @@ PyMySQL==0.8.0
 pyparsing==2.2.0
 PyPDF2==1.26.0
 pypiwin32==223
-PyQt4==4.11.4
 PyQt5==5.9.2
 PySocks==1.6.8
 pytest==3.3.1
