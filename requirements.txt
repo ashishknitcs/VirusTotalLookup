@@ -16,7 +16,7 @@ cryptography==2.1.4
 cycler==0.10.0
 dbconfig==0.3.2
 decorator==4.1.2
-Django==2.0.1
+Django==2.2.10
 dnspython==1.15.0
 docutils==0.14
 entrypoints==0.2.3
