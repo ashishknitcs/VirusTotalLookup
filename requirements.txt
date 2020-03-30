@@ -4,7 +4,7 @@ attrs==17.3.0
 auth0-python==3.3.0
 beautifulsoup4==4.6.0
 bkcharts==0.2
-bleach==2.1.2
+bleach==3.1.4
 bokeh==0.12.7
 cached-property==1.4.0
 certifi==2017.11.5
