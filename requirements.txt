@@ -28,7 +28,7 @@ geos==0.2.1
 googlemaps==3.0.2
 gunicorn==19.9.0
 html5lib==1.0.1
-httplib2==0.10.3
+httplib2==0.18.0
 idna==2.6
 ipykernel==4.7.0
 ipython==6.2.1
