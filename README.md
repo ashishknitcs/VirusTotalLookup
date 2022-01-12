@@ -24,7 +24,7 @@ eg. https://www.virustotal.com/gui/file/6e7785213d6af20f376a909c1ecb6c9bddec7004
 
 Positives: How many Antivirus detected hash as malicious.
 
-[!Screenshot: Application in Action](https://github.com/ashishknitcs/VirusTotalLookup/blob/master/screenshot.jpg)
+![Screenshot: Application in Action](https://github.com/ashishknitcs/VirusTotalLookup/blob/master/screenshot.jpg)
 
 Symantec:  If Syamantec detected ‘True’  else ‘False’. Following column indicate symantec detection result and Symantec update date. 
 Also, what is detection response from other leading AV like Trendmicro, Sophos, and McAfee. 
